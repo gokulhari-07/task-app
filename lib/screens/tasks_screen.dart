@@ -58,8 +58,8 @@ class _TasksScreenState extends ConsumerState<TasksScreen> {
     // 🧠 isDarkMode is now derived from themeModeProvider directly here.
     // Before: it came in as widget.isDarkMode (a prop from MyApp).
     // After: any widget with ref can read this — no drilling needed.
-    final themeMode = ref.watch(themeModeProvider);
-    final isDarkMode = themeMode == ThemeMode.dark;
+    //final themeMode = ref.watch(themeModeProvider);
+    //final isDarkMode = themeMode == ThemeMode.dark;
 
     final mediaQuery = MediaQuery.of(context);
     final asyncTasks = ref.watch(tasksApiProvider);
