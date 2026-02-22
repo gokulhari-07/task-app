@@ -11,7 +11,7 @@ final tasksApiProvider = FutureProvider<List<Task>>((ref) async {
   print("API called");
 
   // ⏳ Simulate network delay
-  await Future.delayed(const Duration(seconds: 2));
+  await Future.delayed(const Duration(seconds: 1));
 
   // ✅ Fake API response (success case)
   return const [
